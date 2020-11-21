@@ -1,0 +1,14 @@
+body{
+    background-image: url("./img/quiz.jpg");
+    background-size: cover;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
