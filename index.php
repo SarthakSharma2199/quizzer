@@ -42,8 +42,8 @@ if (isset($_SESSION['id'])) {
     </header>
 
     <main>
-        <div class="container form-group text-center">
-            <form method="POST" action="" class="shadow rounded p-5">
+        <div class="container h-100 d-flex justify-content-center form-group">
+            <form method="POST" action="" class="shadow rounded p-5 my-auto text-center">
                 <h3>Enter your name</h3>
 
                 <input type="name" name="name" required="true" class="form-control my-3">

@@ -35,16 +35,26 @@ if (isset($_SESSION['id'])) {
         </header>
 
         <main>
-            <div class="container">
-                <h2>Welcome to the quiz <?php echo $_SESSION["id"] . "!" ?></h2>
+            <div class="container h-100 d-flex justify-content-center">
+                <div class="my-auto text-center shadow rounded p-5">
+                    <div class="row">
+                        <h2>Welcome to the quiz <?php echo $_SESSION["id"] . "!" ?></h2>
+                    </div>
 
-                <ul>
-                    <li><strong>Type: </strong>Multiple Choice</li>
-                    <li><strong>Number of questions: </strong><?php echo $total; ?></li>
-                    <li><strong>Score: </strong> &nbsp; 1 point for each correct answer</li>
-                </ul>
-                <a href="question.php?n=1" class="btn btn-secondary">Start Quiz</a>
-                <a href="exit.php" class="btn btn-secondary">Exit</a>
+                    <div class="row py-5 text-left">
+                        <ul>
+                            <li><strong>Type: </strong>Multiple Choice</li>
+                            <li><strong>Number of questions: </strong><?php echo $total; ?></li>
+                            <li><strong>Grading: </strong> 1 point for each correct answer</li>
+                        </ul>
+
+                    </div>
+                    <div class="row mx-auto">
+                        <a href="question.php?n=1" class="btn btn-secondary">Start Quiz</a>
+                        <a href="exit.php" class="btn btn-secondary ml-1">Exit</a>
+                    </div>
+
+                </div>
 
             </div>
         </main>
