@@ -17,7 +17,7 @@ if (isset($_SESSION['id'])) {
             $run = mysqli_query($conn, $query) or die(mysqli_error($conn));
             if (mysqli_num_rows($run) > 0) {
                 $row = mysqli_fetch_array($run);
-                $correct_answer = $row['correct_answer'];
+                $correct_answer = $row['correct_ans'];
             }
             if ($correct_answer == $selected_choice) {
                 $_SESSION['score']++;

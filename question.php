@@ -74,11 +74,11 @@ if (isset($_SESSION['id'])) {
                         <li><input name="choice" type="radio" value="d" required=""><?php echo $opt4; ?></li>
 
                     </ul>
-                    <input type="submit" value="Submit" class="btn btn-primary">
+                    <input type="submit" value="Next" class="btn btn-primary">
                     <input type="hidden" name="number" value="<?php echo $qno; ?>">
                     <br>
                     <br>
-                    <a href="results.php" class="btn btn-primary">End Quiz</a>
+                    <a href="results.php" class="btn btn-primary">Submit Quiz</a>
                 </form>
             </div>
         </main>
