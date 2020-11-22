@@ -48,6 +48,7 @@ if (isset($_SESSION['id'])) {
 
                 <input type="name" name="name" required="true" class="form-control my-3">
                 <input type="submit" name="submit" value="Start Now" class="btn btn-secondary">
+            </form>
 
         </div>
 
